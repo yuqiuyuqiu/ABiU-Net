@@ -6,20 +6,27 @@ This code is licensed for non-commerical research purpose only.
 
 Existing salient object detection (SOD) methods mainly rely on CNN-based U-shaped structures with skip connections to combine the global contexts and local spatial details that are crucial for locating salient objects and refining object details, respectively. Despite great successes, the ability of CNN in learning global contexts is limited. Recently, the vision transformer has achieved revolutionary progress in computer vision owing to its powerful modeling of global dependencies. However, directly applying the transformer to SOD is suboptimal because the transformer lacks the ability to learn local spatial representations. To this end, this paper explores the combination of transformer and CNN to learn both global and local representations for SOD. We propose a transformer-based Asymmetric Bilateral U-Net (ABiU-Net). The asymmetric bilateral encoder has a transformer path and a lightweight CNN path, where the two paths communicate at each encoder stage to learn complementary global contexts and local spatial details, respectively. The asymmetric bilateral decoder also consists of two paths to process features from the transformer and CNN encoder paths, with communication at each decoder stage for decoding coarse salient object locations and fine-grained object details, respectively. Such communication between the two encoder/decoder paths enables AbiU-Net to learn complementary global and local representations,taking advantage of the natural properties of transformer and CNN, respectively. Hence, ABiU-Net provides a new perspective for transformer-based SOD. Extensive experiments demonstrate that ABiU-Net performs favorably against previous state-of-the-art SOD methods.
 
-![Encoder-decoder Architectures](figures/frame.jpg)
+
 ![ABiU-Net](figures/arch.jpg)
+
+Fig. 1. Illustration of various encoder-decoder architectures. (a) ∼ (e) indicate the architectures of Hypercolumn, U-shape, BiSeNet, DSS, and our ABiU-Net, respectively.
+
+![Encoder-decoder Architectures](figures/frame.jpg)
+
+Fig. 2. Framework of the proposed Asymmetric Bilateral U-Net (ABiU-Net).
+
 
 
 ### Citations
 
 If you are using the code/model provided here in a publication, please consider citing:
    
-@article{qiu2021boosting,
-  title={Boosting Salient Object Detection with Transformer-based Asymmetric Bilateral U-Net},
-  author={Qiu, Yu and Liu, Yun and Zhang, Le and Xu, Jing},
-  journal={arXiv preprint arXiv:2108.07851},
-  year={2021}
-}
+    @article{qiu2021boosting,
+    title={Boosting Salient Object Detection with Transformer-based Asymmetric Bilateral U-Net},
+    author={Qiu, Yu and Liu, Yun and Zhang, Le and Xu, Jing},
+    journal={arXiv preprint arXiv:2108.07851},
+    year={2021}
+    }
 
 ### Requirements
 
