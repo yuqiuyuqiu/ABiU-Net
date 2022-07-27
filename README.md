@@ -8,11 +8,9 @@ Existing salient object detection (SOD) methods mainly rely on CNN-based U-shape
 
 
 ![ABiU-Net](figures/arch.jpg)
-
 Fig. 1. Illustration of various encoder-decoder architectures. (a) ∼ (e) indicate the architectures of Hypercolumn, U-shape, BiSeNet, DSS, and our ABiU-Net, respectively.
 
 ![Encoder-decoder Architectures](figures/frame.jpg)
-
 Fig. 2. Framework of the proposed Asymmetric Bilateral U-Net (ABiU-Net).
 
 
@@ -38,7 +36,7 @@ The code is built with the following dependencies:
 
 ### Data Preparation
 
-*The SegLesion dataset is organized into the following tree structure:*
+*The Saliency dataset is organized into the following tree structure:*
 ```
 dataset
 │
