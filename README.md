@@ -80,7 +80,7 @@ The pretrained PVT-Tiny can be downloaded:
 Run the following scripts to train the model:
 
 ```
-CUDA_VISIBLE_DEVICES=0 python test.py [--model_name 'ABiU-Net']
+CUDA_VISIBLE_DEVICES=0 python train.py [--model_name 'ABiU-Net']
                 [--max_epochs 50]
                 [--batch_size 16]
                 [--base_lr 5e-5]
